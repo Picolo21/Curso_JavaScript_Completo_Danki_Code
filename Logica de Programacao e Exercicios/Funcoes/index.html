@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function escreveNome()
+        {
+            console.log("João");
+            console.log("-------------------------------------------");
+        }
+
+        function escreveNomePorParametro(nome)
+        {
+            console.log("O nome passado por parâmetro foi: " + nome);
+            console.log("-------------------------------------------");
+        }
+
+        function escreveNomeComRetorno()
+        {
+            return "Maria";
+        }
+
+        escreveNome();
+        escreveNomePorParametro("Felipe");
+        var nome = escreveNomeComRetorno();
+        console.log(nome);
+    </script>
+</body>
+</html>
