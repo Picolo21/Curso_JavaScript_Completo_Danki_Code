@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ano_nascimento;
+        var ano_atual;
+        do
+        {
+            ano_nascimento = parseInt(prompt("Digite o ano que você nasceu:"));
+            ano_atual = parseInt(prompt("Digite o ano atual:"));
+
+            if (ano_nascimento > ano_atual)
+            {
+                alert("Por favor, informe os anos necessários corretamente");
+            }
+        } while (ano_nascimento > ano_atual);
+
+        var idade = ano_atual - ano_nascimento
+
+        alert("Você tem " + idade + " anos.");
+    </script>
+</body>
+</html>
