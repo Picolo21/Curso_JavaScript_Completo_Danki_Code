@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var operacao;
+
+        var numero_1 = parseInt(prompt("Digite o 1º número:"));
+
+        do
+        {
+            operacao = prompt("Digite o símbolo da operação que deseja realizar (+, -, * ou /):")
+            if (operacao != "+" && operacao != "-" && operacao != "*" && operacao != "/")
+            {
+                alert("Por favor, informe uma operação válida");
+            }
+        } while (operacao != "+" && operacao != "-" && operacao != "*" && operacao != "/");
+
+        var numero_2 = parseInt(prompt("Digite o 2º número:"));
+        var resultado;
+
+        if (operacao == "+")
+        {
+            resultado = numero_1 + numero_2
+        }
+        else if (operacao == "-")
+        {
+            resultado = numero_1 - numero_2
+        }
+        else if (operacao == "*")
+        {
+            resultado = numero_1 * numero_2
+        }
+        else if (operacao == "/")
+        {
+            resultado = numero_1 / numero_2
+        }
+
+        alert(numero_1 + " " + operacao + " " + numero_2 + " = " + resultado);
+    </script>
+</body>
+</html>
