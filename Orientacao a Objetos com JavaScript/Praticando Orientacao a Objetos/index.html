@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pessoa(nome, animal)
+        {
+            this.nome = nome
+            this.animal = new Animal(animal)
+        }
+
+        function Animal(tipo)
+        {
+            this.tipo = tipo
+        }
+
+        var nome = prompt("Digite seu nome:");
+        var animal = prompt("Digite o tipo de animal que você tem:");
+
+        var pessoa = new Pessoa(nome, animal);
+
+        alert(pessoa.nome);
+        alert(pessoa.animal.tipo);
+    </script>
+</body>
+</html>
