@@ -1,0 +1,14 @@
+.conteudo h2 span{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.conteudo p{
+    overflow: hidden;
+    height: 0;
+    transition: 1s;
+}
+
+.mostrar{
+    height: auto !important;
+}
